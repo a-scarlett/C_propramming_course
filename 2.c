@@ -2,24 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
-//проверка кодировки
-unsigned long long factorial(int n) {
-	if (n == 1) return 1;
-	else return n*(factorial(n - 1));
-}
-
 int main()
 {
-	double x;
-	unsigned long long res=1;
-	int i = 1;
-	scanf("%lf", &x);
-	while (pow(x, i) / factorial(i) > 1e-6) 
-	{
-		res += pow(x, i) / factorial(i);
-		i++;
-	}
-	printf("Result = %llu", res);
+	double x1, y1, x2, y2, x3, y3;
+
+	printf("Enter point coordinates : ");
+
+	scanf("%lf %lf", &x1, &y1);
+	scanf("%lf %lf", &x2, &y2);
+	scanf("%lf %lf", &x3, &y3);
+
+	double Tol = 1e-10;
+
+	double d = (fabs((y2-y1)*x3+(x1-x2)*y3+x1*(y1-y2)+y1*(x2-x1))/sqrt(pow((y2- y1),2) + pow((x1 - x2),2)));
+
+	if (fabs(d)<Tol)
+		printf("Yes");
+	else printf("Np");
 	return EXIT_SUCCESS;
 }
