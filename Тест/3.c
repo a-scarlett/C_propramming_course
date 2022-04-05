@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+//просто коммент
+
 _Bool similarity(double x1, double y1, double z1, double x2, double y2, double z2, double Tol ) {
 	if ((fabs(x1 / x2 - y1 / y2) < Tol) & (fabs(x1 / x2 - z1 / z2) < Tol) & (fabs(z1 / z2 - y1 / y2) < Tol)) return 1;
 	else return 0;
