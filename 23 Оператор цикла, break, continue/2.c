@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-//проверка кодировки
 unsigned long long factorial(int n) {
 	if (n == 1) return 1;
 	else return n*(factorial(n - 1));
