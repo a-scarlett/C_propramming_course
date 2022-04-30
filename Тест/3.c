@@ -24,6 +24,6 @@ int main()
 	
 	if (similarity(x1, y1, z1, x2, y2, z2, Tol) | similarity(x1, z1, y1, x2, y2, z2, Tol) | similarity(y1, x1, z1, x2, y2, z2, Tol) | similarity(y1, z1, x1, x2, y2, z2, Tol) | similarity(z1, x1, y1, x2, y2, z2, Tol) | similarity(z1, y1, x1, x2, y2, z2, Tol))
 		printf("Yes, it is similarity");
-	else printf("No, it is not similarity");
+	else printf("No, it is not.");
 	return EXIT_SUCCESS;
 }
