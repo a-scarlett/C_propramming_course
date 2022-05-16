@@ -1,5 +1,4 @@
 #include <stdio.h>
-\\комментарий
 
 #define f(x) (((x)*(x)*(x))-((x)*(x))+5*(x)-3)
 
