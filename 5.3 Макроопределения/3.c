@@ -6,8 +6,6 @@
 
 int main() {
 
-	setlocale(LC_ALL, "Rus");
-
 	printf("%s", W("ss", "rr"));
 
 }
